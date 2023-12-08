@@ -1,20 +1,27 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import Home from "./src/Pantalla/home";
+import { StyleSheet,  View, Text } from 'react-native';
+/*import ItemListCategories from "./src/Pantalla/itemListCategory"
+import ItemDetail from "./src/Pantalla/itemdetail"*/
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '340636',
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'start',
   },
-});
+})
+
+const App = () => {
+  return (
+    <View style={styles.container}>
+      <Text>SUPLEMENTOS ALIMENTICIOS OMNILIFE</Text>
+      <Home />
+    </View>
+  );
+}
+
+export default App
+
+
