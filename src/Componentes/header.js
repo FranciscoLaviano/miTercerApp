@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
 })
 
 
-const Header = ({title=Producto}) => {
+const Header = ({title="Producto"}) => {
 
    return (
     <View style={styles.container}>

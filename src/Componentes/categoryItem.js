@@ -15,9 +15,9 @@ const styles = StyleSheet.create({
         alignItems:"center"
     }
 })
-const CategoryItem = ({categoria}) => {
+const CategoryItem = ({categoria, setCategoriaElejida}) => {
     return (
-      <Pressable onPress={()=>console.log(categoria)}>
+      <Pressable onPress={()=>setCategoriaElejida(categoria)} >
         <CardShadow style={styles.container}>
           <Text style={styles.text}>{categoria}</Text>
         </CardShadow>
