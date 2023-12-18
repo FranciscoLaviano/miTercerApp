@@ -25,11 +25,12 @@ const App = () => {
 
   return (
     <View style={styles.container}>
+      <Text>SUPLEMENTOS ALIMENTICIOS OMNILIFE</Text>
       {categoriaElejida ? <ItemListCategories categoria={categoriaElejida} />
       :
       <Home setCategoriaElejida={setCategoriaElejida} />
     }
-      <Text>SUPLEMENTOS ALIMENTICIOS OMNILIFE</Text>
+      
     </View>
   );
 }
