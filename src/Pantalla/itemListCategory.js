@@ -13,11 +13,11 @@ const ItemListCategories = ({categoria}) => {
   const [productos, setProductos] = useState(allProductos)
 
  useEffect(() => { if(categoria){
-  const productosCategory = allProductos.filter(productos => productos.categoria === categoria)
-  const productosFiltrados = productosCategory.filter(productos => productos.title.includes(keyword))
+  const productosCategory = allProductos.filter(producto => producto.categoria === categoria)
+  const productosFiltrados = productosCategory.filter(producto => producto.title.includes(keyword))
   setProductos(productosFiltrados)
 }else{
-  const productosFiltrados = allProductos.filter(productos => productos.title.includes(keyword))
+  const productosFiltrados = allProductos.filter(producto => producto.title.includes(keyword))
   setProductos(productosFiltrados)
 }
 }, [keyword])
