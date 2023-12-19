@@ -37,10 +37,11 @@ const Busqueda = ({setKeyword}) => {
                 <Entypo name='circle-with-cross' color="black" size={25}/>
             </Pressable>
         </View>
-        
+        {error ? <Text style={styles.errorInput}>{error}</Text> : null}
     </View>
+
   )
-}
+} 
 
 export default Busqueda
 const styles = StyleSheet.create({
