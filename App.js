@@ -1,7 +1,7 @@
 import Home from "./src/Pantalla/home";
 import { StyleSheet,  View, Text } from 'react-native';
 import ItemListCategories from "./src/Pantalla/itemListCategory"
-import ItemDetail from "./src/Pantalla/itemdetail"
+//import ItemDetail from "./src/Pantalla/itemdetail"
 import { useState } from 'react'
 import { useFonts } from "expo-font"
 

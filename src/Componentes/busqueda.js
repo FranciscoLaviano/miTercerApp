@@ -10,6 +10,16 @@ const Busqueda = ({setKeyword}) => {
     const [input,setInput] = useState("")
     const [error,setError] = useState("")
 
+    const Busqueda = () =>{
+        const expression = /.*[0-9].*/
+        if(expression.test(input)){
+           setError("no debe contener numeros")
+        }else{
+            setKeyword(input)
+        }
+        
+    }
+
     setKeyword(input)
     const removeItem = () => {
         setInput("")
