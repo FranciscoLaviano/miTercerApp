@@ -4,17 +4,7 @@ import CardShadow from '../Wrappers/Degradados'
 
 
 
-const styles = StyleSheet.create({
-    container:{
-        width:"80%",
-        marginHorizontal:"10%",
-        backgroundColor:"#ECE67F",
-        margin:10,
-        padding:10,
-        justifyContent:"center",
-        alignItems:"center"
-    }
-})
+
 const CategoryItem = ({categoria, setCategoriaElejida}) => {
     return (
       <Pressable onPress={()=>setCategoriaElejida(categoria)} >
@@ -26,3 +16,15 @@ const CategoryItem = ({categoria, setCategoriaElejida}) => {
   }
 
   export default CategoryItem;
+
+  const styles = StyleSheet.create({
+    container:{
+        width:"80%",
+        marginHorizontal:"10%",
+        backgroundColor:"#ECE67F",
+        margin:10,
+        padding:10,
+        justifyContent:"center",
+        alignItems:"center"
+    }
+})

@@ -5,14 +5,7 @@ import Busqueda from "../Componentes/busqueda"
 import allProductos from "../Data/catalogo.json"
 import ProductoItem from "../Componentes/productoItem"
 
-const styles = StyleSheet.create({
-    container:{
-        width:"100%",
-        flex:1,
-        justifyContent:"center",
-        alignItems:"center"
-    }
-})
+
 
 const ItemListCategories = ({categoria}) => {
 
@@ -46,3 +39,11 @@ const ItemListCategories = ({categoria}) => {
 
 export default ItemListCategories;  
 
+const styles = StyleSheet.create({
+  container:{
+      width:"100%",
+     /* flex:1,
+      justifyContent:"center",
+      alignItems:"center"*/
+  }
+})

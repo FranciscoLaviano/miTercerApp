@@ -6,14 +6,7 @@ import { useState } from 'react'
 import { useFonts } from "expo-font"
 
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '340636',
-    alignItems: 'center',
-    justifyContent: 'start',
-  },
-})
+
 
 const App = () => {
 
@@ -35,6 +28,15 @@ const App = () => {
   );
 }
 
-export default App
+export default App;
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '340636',
+    alignItems: 'center',
+    justifyContent: 'start',
+  },
+})
 
 

@@ -1,18 +1,6 @@
 import { StyleSheet, Text, View } from 'react-native'
 
 
-const styles = StyleSheet.create({
-    container:{
-        backgroundColor:"E2EFE4",
-        width:"100%",
-        height:80,
-        justifyContent:"center",
-        alignItems:"center"
-    },
-    text:{
-        fontSize:20
-    }
-})
 
 
 const Header = ({title="Producto"}) => {
@@ -27,3 +15,16 @@ const Header = ({title="Producto"}) => {
 
 }
 export default Header;
+
+const styles = StyleSheet.create({
+    container:{
+        backgroundColor:"E2EFE4",
+        width:"100%",
+        height:80,
+        justifyContent:"center",
+        alignItems:"center"
+    },
+    text:{
+        fontSize:20
+    }
+})

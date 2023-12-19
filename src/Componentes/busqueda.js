@@ -3,31 +3,7 @@ import {useState} from 'react'
 import {AntDesign , Entypo} from "@expo/vector-icons"
 
 
-const styles = StyleSheet.create({
-    container:{
-        backgroundColor:'#ECE67F',
-        width:"100%"
-    },
-    containerInput:{
-        width:"100%",
-        flexDirection:"row",
-        alignItems:"center",
-        gap:10
-    },
-    input:{
-      backgroundColor:'#fcfcf5',
-      width:"75%",
-      borderWidth:2,
-      borderRadius:5,
-      paddingHorizontal:10,
-      paddingVertical:5,
-      margin:10
-    },
-    errorInput:{
-        color:"red",
-        paddingHorizontal:10
-    }
-})
+
 
 const Busqueda = ({setKeyword}) => {
 
@@ -57,3 +33,28 @@ const Busqueda = ({setKeyword}) => {
 }
 
 export default Busqueda
+const styles = StyleSheet.create({
+    container:{
+        backgroundColor:'#ECE67F',
+        width:"100%"
+    },
+    containerInput:{
+        width:"100%",
+        flexDirection:"row",
+        alignItems:"center",
+        gap:10
+    },
+    input:{
+      backgroundColor:'#fcfcf5',
+      width:"75%",
+      borderWidth:2,
+      borderRadius:5,
+      paddingHorizontal:10,
+      paddingVertical:5,
+      margin:10
+    },
+    errorInput:{
+        color:"red",
+        paddingHorizontal:10
+    }
+})
